@@ -88,7 +88,7 @@ For additional info, contact Dominic Muthiani Muli at [dominic.muli@student.mori
 ```
 ├── data
 ├── images
-├── movie-genre-analysis.ipynb
-├── movie-genre-analysis.pdf
+├── movie-EDA.ipynb
+├── movie-EDA.pdf
 └── README.md
 ```
