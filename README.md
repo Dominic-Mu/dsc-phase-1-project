@@ -33,9 +33,9 @@ The data sources for this data science project will be:
 
 The combined dataset has the following variables:
 * **tconst**- movie unique identifier code.
-* **primary_title**- movie title such 
+* **primary_title**- movie title
 * **original_title**- movie title in the native language which the movie was shot at. 
-* **start_year**- year the movie started airing
+* **start_year**- year the movie release year
 * **runtime_minutes**- movie length in minutes 
 * **genres**- film genre such as Comedy 
 * **averagerating**- the weighted average of all the individual user ratings
