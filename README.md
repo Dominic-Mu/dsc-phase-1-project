@@ -1,65 +1,74 @@
-# Phase 1 Project
+<img src="./images/vecteezy_microsoft-logo-on-transparent-background_14018578.jpg" alt="Microsoft Logo" width="300">
 
-You've made it all the way through the first phase of this course - take a minute to celebrate your awesomeness!
+# Movie Genre Analysis For Proposed Microsoft Studio
 
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-1-project/master/awesome.gif)
-
-Now you will put your new skills to use with a large end-of-Phase project! This project should take 20 to 30 hours to complete.
+**Author**: [Dominic Muthiani Muli](mailto:dominic.muli@student.moringaschool.com)
 
 ## Project Overview
 
-For this project, you will use exploratory data analysis to generate insights for a business stakeholder.
+[Microsoft Corporation](https://www.microsoft.com/en-us/) is a multinational computer technology corporation that develops, licenses, and sells computer software, consumer electronics, and personal computers. It is headquartered in Redmond, Washington. The company was founded on April 4, 1975, by Bill Gates and Paul Allen in Albuquerque, New Mexico. 
 
-### Business Problem
+This project analyses movie genre ratings and gross earnings to offer Microsoft Corporation insights about movies for the proposed new original movie studio.
 
-Microsoft sees all the big companies creating original video content and they want to get in on the fun. They have decided to create a new movie studio, but they don’t know anything about creating movies. You are charged with exploring what types of films are currently doing the best at the box office. You must then translate those findings into actionable insights that the head of Microsoft's new movie studio can use to help decide what type of films to create.
+## Business Problem
+<img src="./images/Clapper_board_Clapper-board.jpg" alt="Movie" height="200">
 
-### The Data
+Microsoft plans to venture in original video content creation. The head of Microsoft's proposed movie studio wants to know what genres of films are currently performing best at the box office. They need this information so that they can focus on creating films that are likely to succeed.
 
-In the folder `zippedData` are movie datasets from:
+## Objectives
+* Identify the best performing movie genres at the box office.
+* Generate recommendations for the types of films that Microsoft's proposed movie studio should create.
 
-* [Box Office Mojo](https://www.boxofficemojo.com/)
-* [IMDB](https://www.imdb.com/)
-* [Rotten Tomatoes](https://www.rottentomatoes.com/)
-* [TheMovieDB](https://www.themoviedb.org/)
-* [The Numbers](https://www.the-numbers.com/)
+## Metric of Success
+The project will be considered successful if:
+* I accurately make predictions about which movie genres are doing the best at the box office
+* I generate useful recommendations about types of films the studio should create
 
-It is up to you to decide what data from this to use and how to use it. If you want to make this more challenging, you can scrape websites or make API calls to get additional data. If you are feeling overwhelmed or behind (e.g. struggled with the Phase 1 Code Challenge), we recommend you use only the following data files:
+## Understanding Data
+The data sources for this data science project will be:
 
-* imdb.title.basics
-* imdb.title.ratings
-* bom.movie_gross
+* The bom.movie_gross.csv dataset, which contains information about the gross earnings of movies from [Box Office Mojo](https://www.boxofficemojo.com/).
+* The title.basics.csv dataset, which contains information about the basic details of movies from [IMDB](https://www.imdb.com/).
+* The title.ratings.csv dataset, which contains information about the ratings of movies from [IMDB](https://www.imdb.com/).
 
-## Deliverables
+The combined dataset has the following variables:
+* **tconst**- movie unique identifier code.
+* **primary_title**- movie title such 
+* **original_title**- movie title in the native language which the movie was shot at. 
+* **start_year**- year the movie started airing
+* **runtime_minutes**- movie length in minutes 
+* **genres**- film genre such as Comedy 
+* **averagerating**- the weighted average of all the individual user ratings
+* **numvotes**- the number of votes the movie has received
+* **foreign_gross**- foreign gross revenue for a movie 
+* **domestic_gross**- domestic revenue for a movie
 
-There are three deliverables for this project:
+## Methods
 
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
+This project uses exploratory data analysis.
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
+## Results
 
-### Key Points
 
-* **Your analysis should yield three concrete business recommendations.** The ultimate purpose of exploratory analysis is not just to learn about the data, but to help an organization perform better. Explicitly relate your findings to business needs by recommending actions that you think the business (Microsoft) should take.
 
-* **Communicating about your work well is extremely important.** Your ability to provide value to an organization - or to land a job there - is directly reliant on your ability to communicate with them about what you have done and why it is valuable. Create a storyline your audience (the head of Microsoft's new movie studio) can follow by walking them through the steps of your process, highlighting the most important points and skipping over the rest.
+## Conclusions
 
-* **Use plenty of visualizations.** Visualizations are invaluable for exploring your data and making your findings accessible to a non-technical audience. Spotlight visuals in your presentation, but only ones that relate directly to your recommendations. Simple visuals are usually best (e.g. bar charts and line graphs), and don't forget to format them well (e.g. labels, titles).
 
-## Getting Started
 
-Please start by reviewing this assignment, the rubric at the bottom of it, and the "Project Submission & Review" page. If you have any questions, please ask your instructor ASAP.
+### Recommendations
 
-Next, we recommend you check out [the Phase 1 Project Templates and Examples repo](https://github.com/learn-co-curriculum/dsc-project-template) and use the MVP template for your project.
 
-Alternatively, you can fork [the Phase 1 Project Repository](https://github.com/learn-co-curriculum/dsc-phase-1-project), clone it locally, and work in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
+## For More Information
 
-## Project Submission and Review
+See the full analysis in the [Jupyter Notebook](./movie-genre-analysis.ipynb) or review this [presentation](./movie-genre-analysis.pdf).
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
+For additional info, contact Dominic Muthiani Muli at [dominic.muli@student.moringaschool.com](mailto:dominic.muli@student.moringaschool.com)
 
-## Summary
-
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
+## Repository Structure
+```
+├── data
+├── images
+├── movie-genre-analysis.ipynb
+├── movie-genre-analysis.pdf
+└── README.md
+```
